@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-from sklearn.metrics import classification_report, accuracy_score, ConfusionMatrixDisplay
+from sklearn.metrics import classification_report, accuracy_score, ConfusionMatrixDisplay, confusion_matrix  # <-- added confusion_matrix import
 import pickle
 import time
 
@@ -98,7 +98,7 @@ st.text(classification_report(y, predictions))
 # Confusion Matrix
 st.subheader("Confusion Matrix")
 fig, ax = plt.subplots(figsize=(8, 6))
-cm = confusion_matrix(y, predictions)
+cm = confusion_matrix(y, predictions)  # <-- Now works as confusion_matrix is imported
 ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=model.classes_).plot(ax=ax)
 st.pyplot(fig)
 
