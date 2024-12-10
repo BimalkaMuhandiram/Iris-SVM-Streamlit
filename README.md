@@ -33,4 +33,4 @@ Before running the application, make sure you have the following installed:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/your-repository.git
+   git clone https://github.com/BimalkaMuhandiram/Iris-SVM-Streamlit.git
